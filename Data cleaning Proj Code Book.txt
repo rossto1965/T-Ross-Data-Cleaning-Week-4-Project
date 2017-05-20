@@ -1,0 +1,17 @@
+Code Book for Data Cleaning Project
+
+subject_id – code 1-3 that identifies the subject of the observation. There were 30 subject in the entire study, 9 in the “test” group, and 21 in the “train” group
+
+activity_id – code 1—6 that identifies the activity the subject was doing when observation was made
+
+activity_description – text string that describes the activiy durning the observation. i.e. Walking, Waking up stairs etc.
+
+feature_id – this code designates what feature of the device the observation represents, there are 561 different features of the device, each measuring a different metric.
+
+feature_description – text string that describes the feature_id, there are several feature_desc that are used to describe multiple feature_id, so it is important not to rely on the feature_description as a data key.
+
+Dataset – code to designate which data set, test or training, was the origin of the data. This would enable subsetting of the data by dataset in future analysis without having to re-visit the subject_test and subject_train dataframes
+
+value – the reading for the observation. Each observation is a combination or subject_id, activity_id, and feature_id.
+
+Meanval – in the summary table the meanval is the average of all the observations in the fulldata table with corresponding subject_id, activity_id, and feature_id.
